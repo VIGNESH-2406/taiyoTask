@@ -62,16 +62,6 @@ export default function Mychart() {
     },
   };
 
-  // const labels = [
-  //   "January",
-  //   "February",
-  //   "March",
-  //   "April",
-  //   "May",
-  //   "June",
-  //   "July",
-  // ];
-
   const records = {
     labels: Object.keys(cases),
     datasets: [
