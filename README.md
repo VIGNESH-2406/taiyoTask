@@ -12,3 +12,5 @@ Used the above link to render the chart details for displaying the covid cases
 
 Map :- https://disease.sh/v3/covid-19/countries
 Used the above link to render the react leaflet MAP details for displaying the covid cases in specific countries
+
+DEPLOYED LINK:- https://taiyo-task-htjd455q0-vignesh-2406.vercel.app/
