@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { IEmployee } from "./Employee.Type";
 
 // import EmployeeModal from "./EmployeeModal";

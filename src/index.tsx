@@ -1,10 +1,10 @@
 import "./App.css";
-import React, { useState, ReactElement } from "react";
+import React, { ReactElement } from "react";
 
 import Home from "./components/Home";
 import "react-toastify/dist/ReactToastify.css";
 // import Mychart from "./components/charts";
-import Map from "./components/Map";
+
 // interface MyJSXElements extends JSX.IntrinsicElements {
 //   myCustomElement: React.DetailedHTMLProps<
 //     React.HTMLAttributes<HTMLElement>,

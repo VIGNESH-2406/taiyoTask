@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { LatLngExpression } from "leaflet";
-import { MapContainer, TileLayer, Marker, Tooltip, Popup } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import axios, { AxiosResponse } from "axios";
 
 interface CountryData {
@@ -38,7 +38,7 @@ interface CountryData {
 
 const Map = () => {
   const defaultPosition: LatLngExpression = [46, 2]; // Paris position
-  const [polyLineProps, setPolyLineProps] = useState([]);
+
   const [countryData, setCountryData] = useState<CountryData[]>([]);
 
   const fetchRecords = async (): Promise<AxiosResponse<CountryData[]>> => {
