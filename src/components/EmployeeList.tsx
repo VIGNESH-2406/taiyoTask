@@ -15,7 +15,7 @@ const EmployeeList = (props: Props) => {
     <div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-28 py-4 ml-20 ">
         {list.map((item) => (
-          <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+          <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white mt-20">
             <div className="px-6 py-4 ">
               <div className="font-bold text-xl mb-2">{item.firstName}</div>
               <p className="text-gray-700 text-base mb-2">{item.lastName}</p>

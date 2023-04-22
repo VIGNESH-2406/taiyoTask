@@ -3,7 +3,7 @@ import { IEmployee } from "./Employee.Type";
 
 import React from "react";
 import { toast, ToastContainer } from "react-toastify";
-
+import "react-toastify/dist/ReactToastify.css";
 type Props = {
   onBackBtnClickHnd: () => void;
   onSubmitClickHnd: (data: IEmployee) => void;
@@ -32,7 +32,8 @@ const AddEmployee = (props: Props) => {
     e.preventDefault();
 
     if (!firstName || !lastName) {
-      toast.error("Fill in the input fields");
+      alert("Fill in the input fields");
+      return;
     }
 
     const data: IEmployee = {

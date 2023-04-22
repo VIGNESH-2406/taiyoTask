@@ -98,19 +98,34 @@ const Home = () => {
       </div>
 
       {shownPage === PageEnum.list && (
-        <>
-          <button
-            onClick={onAddEmployeeClickHnd}
-            className="rounded-lg h-18 w-26 p-2 mb-8   font-semibold cursor-pointer bg-blue-400 text-white mt-10"
-          >
-            Create Contact
-          </button>
-          <EmployeeList
-            list={employeeList}
-            onDeleteClickHnd={deleteEmployee}
-            onEdit={editEmployeeData}
-          />
-        </>
+        <div className="">
+          {!employeeList.length ? (
+            <div className="flex justify-center ">
+              <div>
+                <button
+                  onClick={onAddEmployeeClickHnd}
+                  className="rounded-lg h-18 w-26 p-2 mb-8  font-semibold cursor-pointer bg-blue-400 text-white mt-10"
+                >
+                  Create Contact
+                </button>
+                <div
+                  className="bg-orange-100 border-l-4 border-orange-500 text-orange-700 p-4"
+                  role="alert"
+                >
+                  <p className="font-bold"> No contact found</p>
+                  <p>please add contact from create contact button</p>
+                </div>
+                {/* <p className="text-blue-700 font-bold text-2xl"></p> */}
+              </div>
+            </div>
+          ) : (
+            <EmployeeList
+              list={employeeList}
+              onDeleteClickHnd={deleteEmployee}
+              onEdit={editEmployeeData}
+            />
+          )}
+        </div>
       )}
 
       {shownPage === PageEnum.add && (
