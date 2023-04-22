@@ -2,8 +2,7 @@ import { useState } from "react";
 import { IEmployee } from "./Employee.Type";
 
 import React from "react";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+
 type Props = {
   onBackBtnClickHnd: () => void;
   onSubmitClickHnd: (data: IEmployee) => void;
@@ -115,7 +114,6 @@ const AddEmployee = (props: Props) => {
           </button>
         </div>
       </form>
-      <ToastContainer />
     </div>
   );
 };
